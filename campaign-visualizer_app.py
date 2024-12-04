@@ -7,6 +7,7 @@ import os
 # Constants
 BANNER_PATH = "StratAceBanner_Logo.png"
 LOGO_PATH = "Campaign-Visualizer_Logo.png"
+JSON_PATH = "resources/SD6_Election_Point_11082024.geojson"
 url = "https://strategyace.win/"
 USERNAME = "ClientX"
 PASSWORD = "stratbomb"
@@ -140,7 +141,7 @@ def main():
       st.divider()
   
       st.subheader("2024 Election Performance")
-      gdf = gpd.read_file("/content/SD6_Election_Point_11082024.geojson")  #geoJSON file of election results
+      gdf = gpd.read_file(JSON_PATH)  #geoJSON file of election results
       fig = px.scatter_mapbox(
         gdf,
         lat="LATITUDE",
