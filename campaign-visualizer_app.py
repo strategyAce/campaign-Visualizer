@@ -27,7 +27,7 @@ def main():
       st.subheader(" ")
       col1,col2 = st.columns(2)
       with col1:
-          st.title("Reporter Tool")
+          st.title("Visualizer Tool")
           st.subheader("See the big picture, win the big race.")
       with col2:
           st.image(LOGO_PATH,width=225)
