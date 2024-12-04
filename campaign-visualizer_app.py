@@ -92,7 +92,7 @@ def main():
         const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/ash1825/cm39ap0uk01mh01pd02x04lag', // Replace with your style URL
-            center: [-81.379234, 28.538336], // starting position
+            center: [-81.379234, 28.567760], // starting position
             zoom: 11 // starting zoom
         });
       </script>
@@ -122,7 +122,7 @@ def main():
         const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/ash1825/cm4663rzf00qt01s39jhmcrit', // Replace with your style URL
-            center: [-81.379234, 28.538336], // starting position
+            center: [-81.379234, 28.567760], // starting position
             zoom: 11 // starting zoom
         });
       </script>
@@ -154,7 +154,7 @@ def main():
         hover_data=["Performance"],  # Show performance value on hover
         mapbox_style="carto-positron",
         zoom=11,  # Adjust the zoom level as needed
-        center={"lat": 28.538336, "lon": -81.379234},  # Center the map
+        center={"lat": 28.567760, "lon": -81.379234},  # Center the map
         height = 800,
         width = 1200
        )
