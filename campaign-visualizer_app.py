@@ -43,6 +43,7 @@ def main():
           else:
               st.error("Invalid username or password.")
   else:
+      st.set_page_config(layout="wide")
       # Sidebar with expandable User Guide section
       with st.sidebar.title("📘 User Guide / Instructions"):
           st.sidebar.write("""
