@@ -162,6 +162,12 @@ def main():
       fig.update_layout(mapbox_style="carto-positron")
       st.plotly_chart(fig)
 
+      #App Footer
+      st.divider()
+      st.image(BANNER_PATH,width=300)
+      st.write(url)
+      
+
 
 if __name__ == "__main__":
     main()
