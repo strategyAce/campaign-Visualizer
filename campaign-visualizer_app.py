@@ -153,7 +153,7 @@ def main():
         hover_name="PRECINCT",  # Show precinct name on hover
         hover_data=["Performance"],  # Show performance value on hover
         mapbox_style="carto-positron",
-        zoom=10,  # Adjust the zoom level as needed
+        zoom=11,  # Adjust the zoom level as needed
         center={"lat": 28.538336, "lon": -81.379234},  # Center the map
         height = 800,
         width = 1400
