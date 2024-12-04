@@ -157,7 +157,7 @@ def main():
         center={"lat": 28.538336, "lon": -81.379234},  # Center the map
         height = 600,
         width = 100%
-      )
+       )
   
       fig.update_layout(mapbox_style="carto-positron")
       st.plotly_chart(fig)
