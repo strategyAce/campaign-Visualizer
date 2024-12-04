@@ -155,8 +155,8 @@ def main():
         mapbox_style="carto-positron",
         zoom=10,  # Adjust the zoom level as needed
         center={"lat": 28.538336, "lon": -81.379234},  # Center the map
-        height = 600,
-        width = 1000
+        height = 800,
+        width = 1400
        )
   
       fig.update_layout(mapbox_style="carto-positron")
