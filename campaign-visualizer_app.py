@@ -128,36 +128,36 @@ def main():
       </html>
       """
 
-    # Display the map in Streamlit
-    st.subheader("Percentage of Registered Democrats")
-    st.components.v1.html(map1_script, height=600)
-    st.subheader(" ")
-    st.divider()
+      # Display the map in Streamlit
+      st.subheader("Percentage of Registered Democrats")
+      st.components.v1.html(map1_script, height=600)
+      st.subheader(" ")
+      st.divider()
   
-    st.subheader("Total Registered Voters")
-    st.components.v1.html(map2_script, height=600)
-    st.subheader(" ")
-    st.divider()
+      st.subheader("Total Registered Voters")
+      st.components.v1.html(map2_script, height=600)
+      st.subheader(" ")
+      st.divider()
   
-    st.subheader("2024 Election Performance")
-    gdf = gpd.read_file("/content/SD6_Election_Point_11082024.geojson")  #geoJSON file of election results
-    fig = px.scatter_mapbox(
-      gdf,
-      lat="LATITUDE",
-      lon="LONGITUDE",
-      color="Performance",
-      color_continuous_scale="RdBu",  # Use a diverging color scale for positive and negative values
-      size=abs(gdf["Performance"]),  # Size the markers based on performance
-      hover_name="PRECINCT",  # Show precinct name on hover
-      hover_data=["Performance"],  # Show performance value on hover
-      mapbox_style="carto-positron",
-      zoom=10,  # Adjust the zoom level as needed
-      center={"lat": 28.538336, "lon": -81.379234},  # Center the map
-      height = 600
+      st.subheader("2024 Election Performance")
+      gdf = gpd.read_file("/content/SD6_Election_Point_11082024.geojson")  #geoJSON file of election results
+      fig = px.scatter_mapbox(
+        gdf,
+        lat="LATITUDE",
+        lon="LONGITUDE",
+        color="Performance",
+        color_continuous_scale="RdBu",  # Use a diverging color scale for positive and negative values
+        size=abs(gdf["Performance"]),  # Size the markers based on performance
+        hover_name="PRECINCT",  # Show precinct name on hover
+        hover_data=["Performance"],  # Show performance value on hover
+        mapbox_style="carto-positron",
+        zoom=10,  # Adjust the zoom level as needed
+        center={"lat": 28.538336, "lon": -81.379234},  # Center the map
+        height = 600
       )
   
-    fig.update_layout(mapbox_style="carto-positron")
-    st.plotly_chart(fig)
+      fig.update_layout(mapbox_style="carto-positron")
+      st.plotly_chart(fig)
 
 
 if __name__ == "__main__":
