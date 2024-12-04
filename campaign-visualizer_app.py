@@ -16,7 +16,7 @@ PASSWORD = "stratbomb"
 def authenticate(username, password):
     return username == USERNAME and password == PASSWORD
 
-def main()
+def main():
   if "logged_in" not in st.session_state:
       st.session_state.logged_in = False
     
