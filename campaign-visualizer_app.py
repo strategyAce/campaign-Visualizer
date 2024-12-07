@@ -9,8 +9,6 @@ BANNER_PATH = "StratAceBanner_Logo.png"
 LOGO_PATH = "Campaign-Visualizer_Logo.png"
 JSON_PATH = "resources/SD6_Election_Point_11082024.geojson"
 url = "https://strategyace.win/"
-USERNAME = "ClientX"
-PASSWORD = "stratbomb"
 
 
 # Authentication function
