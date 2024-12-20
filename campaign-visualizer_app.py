@@ -142,7 +142,7 @@ def main():
       st.divider()
   
       st.subheader("2024 Election Performance")
-      st.write("The map belows shows how well your candidate did relative to expected performance based on party demographics. Red circles indicate "under performance" while blue indicates "above performance".")
+      st.write("The map belows shows how well your candidate did relative to expected performance based on party demographics. Red circles indicate under-performance while blue indicates above-performance.")
       gdf = gpd.read_file(JSON_PATH)  #geoJSON file of election results
       fig = px.scatter_mapbox(
         gdf,
