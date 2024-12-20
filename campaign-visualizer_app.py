@@ -50,9 +50,10 @@ def main():
           Welcome to the Campaign Visualizer Tool!
 
           **Data Last Updated on:**
-             TBD
+             12/220/2024
   
           **Instructions:**
+             Want to see something not featured? Work with your campaign data manager to generate new and infromative visuals
 
           """)
       
