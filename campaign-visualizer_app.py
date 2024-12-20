@@ -53,7 +53,7 @@ def main():
              12/220/2024
   
           **Instructions:**
-             Want to see something not featured? Work with your campaign data manager to generate new and infromative visuals
+             Want to see something not featured? Work with your campaign data manager to generate new and informative visuals
 
           """)
       
